@@ -1,12 +1,13 @@
 <div align="center">
 
-# Recipe Island
+# Recipeees
 
 React application exercise for browsing and exploring recipes from an API endpoint. Built with React 19, Vite, and Bootstrap.
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live%20Site-brightgreen?style=for-the-badge)](https://de-coil.github.io/recipeees/)
 
-![Cookies](public/favicon.png)
+
+<img src="public/favicon.png" width="160" height="160" alt="Cookies">   
 
 </div>
 
