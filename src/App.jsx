@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import cookies from './assets/cookies.png'
 import './App.css'
 
 function App() {
   const navigate = useNavigate()
-  const goToPage = () => { navigate('/ricette') }
+  const goToPage = () => { navigate('/recipes') }
 
   return (
     <>
@@ -14,15 +13,15 @@ function App() {
           <img src={cookies} className="base" width="170" height="179" alt="" />
         </div>
         <div>
-          <h1>Benvenuti in</h1>
-          <h1>REACT RICETTE</h1>
+          <h1>Welcome to</h1>
+          <h1>Recipeees</h1>
         </div>
         <button
           type="button"
           className="counter"
           onClick={goToPage}
         >
-        Vedi le Ricette
+        See the recipeees
         </button>
       </section>
     </>

@@ -1,16 +1,117 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Recipe Island
 
-Currently, two official plugins are available:
+React application exercise for browsing and exploring recipes from an API endpoint. Built with React 19, Vite, and Bootstrap.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Site-brightgreen?style=for-the-badge)](https://de-coil.github.io/recipeees/)
 
-## React Compiler
+![Cookies](public/favicon.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Browse 50+ recipes from various cuisines
+- View detailed recipe information including ingredients, instructions, and nutritional data
+- Filter and search capabilities
+- Responsive design with orange theme
+- Fast page loads with Vite's hot module replacement
+
+## Technologies
+
+- **React 19** - UI library
+- **Vite 8** - Build tool and dev server
+- **React Router 8** - Client-side routing
+- **Axios** - HTTP client
+- **Bootstrap 5** - UI framework
+- **Oxlint** - Linting
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or pnpm
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd Ricettario
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview  # Preview production build
+```
+
+## Project Structure
+
+```
+src/
+├── assets/          # Images and static assets
+├── routes/          # Page components
+│   ├── Recipes.jsx      # Recipe list page
+│   └── RecipeDetails.jsx # Recipe detail page
+├── App.jsx          # Main app component
+├── App.css          # App styles
+├── main.jsx         # App entry point
+├── index.css        # Global styles (orange theme)
+└── index.css        # CSS variables and theme
+```
+
+## API
+
+This project uses the [DummyJSON Recipes API](https://dummyjson.com/recipes) for recipe data.
+
+### Available Endpoints
+
+- `GET /recipes` - List all recipes
+- `GET /recipes/:id` - Get recipe details
+
+## Features in Detail
+
+### Recipe List
+- Displays recipes in a responsive table
+- Shows cuisine type, difficulty level, and total cooking time
+- Difficulty badges with color coding (Easy/Medium/Hard)
+
+### Recipe Details
+- Full recipe information
+- Ingredients list
+- Step-by-step instructions
+- Nutritional information (calories per serving)
+- Cooking and prep time
+- User ratings and reviews
+- Meal type and tags
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run Oxlint
+
+## License
+
+[MIT](LICENSE)
